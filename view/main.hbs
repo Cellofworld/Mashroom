@@ -1,0 +1,78 @@
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="head">
+        <div class="mainHead">Шампиньоны</div>
+        <div class="slashHead"></div>
+        <div class="secondHead">Описание очень полезного</div>
+    </div>
+   
+        <div class="mainContent">
+            <div class="renderPage">
+                <div class="orderPage">
+                    <div class="orderText">Оформление заказа</div>
+                         <form method="POST" class="formOrder">
+                             <label class="lableName">Название организации</label>
+                             <input name="nameOrg" class="field inputOrder"/>
+                             <label class="lableWeight">Количество</label>
+                             <input name="weight" type="number" class="field inputOrder" min="1" max="150" />
+                             <input type="submit" value="Отправить" class="submitOrder" />
+                         </form>
+                   
+                    
+                    </div>
+               
+            </div>
+            <div class="mainBlocks">
+                <div class="delivery navTab" data-tab="#tab1">
+                     <div class="deliveryText firstTab">Доставка</div>
+                     <div class="deliveryDiscription secondTab">У нас есть доставка</div>
+                    <div class="deliveryImg"></div>
+                   
+                </div>
+                <div class="contactUs navTab" data-tab="#tab2">
+                    <div class="contactText firstTab">Свяжитесь с нами</div>
+                    <div class="contactTextSecond secondTab">Вы можете связаться с нами в соц-сетях</div>
+                    <div class="contactHref">
+                        <a href="#">
+                            <div class="contactTelegramm"></div>
+                        </a>
+                        <a href="#">
+                            <div class="contactWhats"></div>
+                        </a>
+                        <a href="#">
+                            <div class="contactVK"></div>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="email navTab" data-tab="#tab3">
+                    <div class="imgEmail"></div>
+                    <div class="emailText firstTab">EMAIL:</div>
+                    <div class="emailMain secondTab">MisterFuskoff@mail.com</div>
+                </div>
+                <div class="callUs navTab" data-tab="#tab4">
+                    <div class="callImg"></div>
+                    <div class="callText firstTab">Позвоните нам:</div>
+                    <div class="callMain secondTab">8-800-555-35-35</div>
+                </div>
+            </div>
+        </div>
+   
+    
+    <footer>
+        <div class="footer"></div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>

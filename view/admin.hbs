@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список пользователей</title>
+    <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bodyAdm">
+    <div class="headOrder">Список заказов</div>
+  
+    <div class="orderList">
+       
+        {{#each users}}
+            <div class="order">
+                <div class="idOrder">
+                    <div class="nameIdOrder">ID Заказа</div>
+                    <div class="meaningOrder">{{this.id}}</div>
+                </div>
+                <div class="nameOrg">
+                    <div class="nameDiscriptionOrder">Название Организации</div>
+                    <div class="meaningName">{{this.nameOrg}}</div>
+                </div>
+                <div class="nameWeight">
+                    <div class="meaningWeight">Вес заказа</div>
+                    <div class="weightOrder">{{this.weight}}</div>
+                </div>
+                
+                {{!-- <div>
+                    <a href="/edit/{{this.id}}">Edit</a>|
+                    <form action="delete/{{this.id}}" method="POST" style="display:inline;">
+                        <input type="submit" value="Delete" />
+                    </form>
+                </div> --}}
+            </div>
+        {{/each}}
+    </div>
+</body>
+<html>
